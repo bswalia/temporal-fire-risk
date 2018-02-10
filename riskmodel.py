@@ -52,7 +52,7 @@ pittdata = pd.read_csv('/home/linadmin/FirePred/datasets/pittdata.csv',dtype={'P
 
 
 #removing all properties outside Pittsburgh, Wilkinsburg, and Ingram
-pittdata = pittdata[(pittdata.PROPERTYCITY == 'Pittsburgh') & (pittdata.PROPERTYCITY == 'Wilkinsburg') & (pittdata.PROPERTYCITY == 'Ingram')]
+pittdata = pittdata[(pittdata.PROPERTYCITY == 'PITTSBURGH') | (pittdata.PROPERTYCITY == 'WILKINSBURG') | (pittdata.PROPERTYCITY == 'INGRAM')]
 
 # #removing extra whitespaces
 plidata['STREET_NAME'] = plidata['STREET_NAME'].str.strip()
